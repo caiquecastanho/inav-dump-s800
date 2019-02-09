@@ -1,7 +1,3 @@
-Entering CLI Mode, type 'exit' to return, or 'help'
-
-# dump
-
 # version
 # INAV/MATEKF411 2.0.0 Aug 20 2018 / 19:23:35 (dbdd1656a)
 
@@ -766,7 +762,7 @@ set nav_rth_alt_mode = AT_LEAST
 set nav_rth_abort_threshold = 50000
 set nav_max_terrain_follow_alt = 100
 set nav_rth_altitude = 5000
-set nav_rth_home_altitude = 3000
+set nav_rth_home_altitude = 4000
 set nav_mc_bank_angle = 30
 set nav_mc_hover_thr = 1500
 set nav_mc_auto_disarm_delay = 2000
@@ -874,7 +870,7 @@ set fw_ff_roll = 51
 set fw_p_yaw = 6
 set fw_i_yaw = 10
 set fw_ff_yaw = 60
-set fw_p_level = 20
+set fw_p_level = 30
 set fw_i_level = 5
 set fw_d_level = 75
 set max_angle_inclination_rll = 900
@@ -918,12 +914,12 @@ set thr_expo = 0
 set tpa_rate = 20
 set tpa_breakpoint = 1600
 set fw_tpa_time_constant = 0
-set rc_expo = 0
+set rc_expo = 60
 set rc_yaw_expo = 0
 set roll_rate = 36
 set pitch_rate = 18
 set yaw_rate = 20
-set manual_rc_expo = 0
+set manual_rc_expo = 60
 set manual_rc_yaw_expo = 0
 set manual_roll_rate = 100
 set manual_pitch_rate = 100
