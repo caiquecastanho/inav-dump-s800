@@ -1,3 +1,5 @@
+# dump
+
 # version
 # INAV/MATEKF411 2.0.0 Aug 20 2018 / 19:23:35 (dbdd1656a)
 
@@ -96,7 +98,7 @@ map AETR
 serial 20 1 115200 38400 0 115200
 serial 0 64 115200 38400 0 115200
 serial 1 2 115200 9600 0 115200
-serial 30 0 115200 38400 0 115200
+serial 30 2048 115200 38400 0 115200
 
 # led
 led 0 0,0::C:0
@@ -201,10 +203,10 @@ mode_color 6 10 0
 
 # aux
 aux 0 0 0 1800 2100
-aux 1 1 1 1275 1650
-aux 2 10 1 900 1175
-aux 3 27 3 1300 1700
-aux 4 28 1 1700 2100
+aux 1 1 1 1800 2100
+aux 2 2 1 1300 1700
+aux 3 10 1 900 1175
+aux 4 28 3 1700 2100
 aux 5 18 2 1800 2100
 aux 6 0 0 900 900
 aux 7 0 0 900 900
@@ -244,7 +246,7 @@ rxrange 3 1000 2000
 # osd_layout
 osd_layout 0 0 13 2 H
 osd_layout 0 1 12 1 V
-osd_layout 0 2 0 0 V
+osd_layout 0 2 0 0 H
 osd_layout 0 3 8 6 V
 osd_layout 0 4 8 6 V
 osd_layout 0 5 23 8 H
@@ -253,11 +255,11 @@ osd_layout 0 7 12 10 V
 osd_layout 0 8 20 2 H
 osd_layout 0 9 18 1 V
 osd_layout 0 10 8 6 H
-osd_layout 0 11 1 3 H
-osd_layout 0 12 1 4 H
+osd_layout 0 11 25 0 V
+osd_layout 0 12 25 2 V
 osd_layout 0 13 19 2 V
-osd_layout 0 14 2 7 V
-osd_layout 0 15 22 6 V
+osd_layout 0 14 1 7 V
+osd_layout 0 15 25 6 V
 osd_layout 0 16 2 10 H
 osd_layout 0 17 2 11 H
 osd_layout 0 18 2 12 H
@@ -265,7 +267,7 @@ osd_layout 0 19 15 1 H
 osd_layout 0 20 19 12 V
 osd_layout 0 21 1 12 V
 osd_layout 0 22 14 5 V
-osd_layout 0 23 1 8 V
+osd_layout 0 23 0 8 V
 osd_layout 0 24 12 2 H
 osd_layout 0 25 23 5 H
 osd_layout 0 26 24 7 H
@@ -280,7 +282,7 @@ osd_layout 0 34 18 2 H
 osd_layout 0 35 1 5 H
 osd_layout 0 36 1 5 H
 osd_layout 0 37 1 6 H
-osd_layout 0 38 1 7 H
+osd_layout 0 38 13 2 V
 osd_layout 0 39 1 5 H
 osd_layout 0 40 3 2 V
 osd_layout 0 41 1 8 H
@@ -840,10 +842,10 @@ set tz_automatic_dst = OFF
 set display_force_sw_blink = OFF
 set vtx_halfduplex = ON
 set vtx_band = 4
-set vtx_channel = 1
-set vtx_power = 1
-set vtx_low_power_disarm = OFF
-set vtx_freq = 5740
+set vtx_channel = 3
+set vtx_power = 4
+set vtx_low_power_disarm = ON
+set vtx_freq = 5780
 set vtx_pit_mode_freq = 0
 
 # profile
@@ -864,9 +866,9 @@ set mc_d_level = 75
 set fw_p_pitch = 5
 set fw_i_pitch = 12
 set fw_ff_pitch = 55
-set fw_p_roll = 4
-set fw_i_roll = 11
-set fw_ff_roll = 51
+set fw_p_roll = 5
+set fw_i_roll = 10
+set fw_ff_roll = 47
 set fw_p_yaw = 6
 set fw_i_yaw = 10
 set fw_ff_yaw = 60
@@ -937,5 +939,3 @@ set battery_capacity = 0
 set battery_capacity_warning = 0
 set battery_capacity_critical = 0
 set battery_capacity_unit = MAH
-
-# 
